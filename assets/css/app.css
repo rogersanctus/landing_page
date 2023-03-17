@@ -2,4 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import "../../lib/landing_page_web/components.css";
+
 /* This file is for your main application CSS */

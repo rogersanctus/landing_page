@@ -1,0 +1,14 @@
+.me {
+  width: fit-content;
+}
+
+.me__picture {
+  object-fit: cover;
+  width: 150px;
+  height: auto;
+  clip-path: circle(75px at center);
+}
+
+.about-gradient {
+  background-image: linear-gradient(to bottom, theme("colors.slate.600/50%"), theme("colors.slate.900/50%"));
+}

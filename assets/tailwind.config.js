@@ -9,12 +9,30 @@ module.exports = {
   content: [
     "./js/**/*.js",
     "../lib/*_web.ex",
-    "../lib/*_web/**/*.*ex"
+    "../lib/*_web/**/*.*ex",
+    "../lib/*_web/**/*.*css",
   ],
   theme: {
     extend: {
       colors: {
-        brand: "#FD4F00",
+        primary: "#55dde0",
+        secondary: "#33658a",
+        terciary: "#2f4858",
+        accent: "#f6ae2d",
+        orange: "#f26419",
+        surface: "#eef1f2",
+        "cape-lee": {
+          100: "#dee9ec",
+          200: "#bdd3da",
+          300: "#9dbec7",
+          400: "#7ca8b5",
+          500: "#5c92a2",
+          600: "#518A8F",
+          700: "#497582",
+          800: "#375861",
+          900: "#243a41",
+        },
+        "othergreen": "#A9C491"
       }
     },
   },

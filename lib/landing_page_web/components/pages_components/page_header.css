@@ -1,0 +1,27 @@
+#mobile-menu-button::before {
+  content: '';
+}
+
+@media only screen and (min-width: theme('screens.fitmenu')) {
+  #mobile-menu-button::before {
+    content: none;
+  }
+}
+
+.nav-menu li a > div {
+  transition: 0.3s ease-out;
+  opacity: 0;
+}
+
+.nav-menu li:hover a > div {
+  width: 100%;
+  opacity: 1;
+}
+
+@media only screen and (min-width: theme('screens.fitmenu')) {
+  .nav-menu li:hover a > div {
+    width: 80%;
+    height: 3px;
+    border-radius: 0;
+  }
+}

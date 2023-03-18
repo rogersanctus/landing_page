@@ -5,6 +5,8 @@ const plugin = require("tailwindcss/plugin")
 const fs = require("fs")
 const path = require("path")
 
+const { FIT_MENU } = require("./js/consts")
+
 module.exports = {
   content: [
     "./js/**/*.js",
@@ -33,6 +35,9 @@ module.exports = {
           900: "#243a41",
         },
         "othergreen": "#A9C491"
+      },
+      screens: {
+        "fitmenu": `${FIT_MENU}px`
       }
     },
   },

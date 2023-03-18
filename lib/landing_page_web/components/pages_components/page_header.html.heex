@@ -1,51 +1,59 @@
 <a name="top" />
-<header class="absolute z-10 w-full px-2 py-4">
+<header class="static fitmenu:absolute z-10 w-full fitmenu:px-2 fitmenu:py-4 fitmenu:bg-transparent bg-secondary">
+  <div class="fitmenu:hidden flex items-center">
+    <button id="mobile-menu-button" class="flex items-center outline-none m-2 hover:text-accent text-white">
+      <svg
+        class="w-8 h-8"
+        x-show="!showMenu"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+      <span class="font-semibold uppercase ml-2">Menu</span>
+    </button>
+  </div>
   <nav class="flex justify-center" >
-    <ul class="flex gap-8 nav-menu cursor-pointer">
-      <li class="text-lime-500 font-semibold text-2xl uppercase">
-        <a href="#about_me" class="flex flex-col items-center">
-          <span class="whitespace-nowrap">Sobre mim</span>
-          <div class="w-0 h-[12px] mt-2 bg-lime-500" />
+    <ul class="flex fitmenu:flex-row flex-col gap-1 fitmenu:gap-8 nav-menu cursor-pointer fitmenu:w-auto w-full">
+      <li class="text-white text-md fitmenu:text-lime-500 font-semibold fitmenu:text-2xl uppercase">
+        <a href="#about_me" class="flex flex-col items-center fitmenu:static relative">
+          <span class="fitmenu:z-auto z-10 whitespace-nowrap fitmenu:p-0 p-2">Sobre mim</span>
+          <div class="fitmenu:static absolute w-full h-full fitmenu:w-0 fitmenu:h-[12px] fitmenu:mt-2 fitmenu:bg-lime-500 bg-stone-800" />
         </a>
       </li>
-      <li class="text-lime-500 font-semibold text-2xl uppercase">
-        <a href="#skills" class="flex flex-col items-center">
-          <span class="whitespace-nowrap">Habilidades</span>
-          <div class="w-0 h-[12px] mt-1 bg-lime-500" />
+      <li class="text-white text-md fitmenu:text-lime-500 font-semibold fitmenu:text-2xl uppercase">
+        <a href="#skills" class="flex flex-col items-center fitmenu:static relative">
+          <span class="fitmenu:z-auto z-10 whitespace-nowrap fitmenu:p-0 p-2">Habilidades</span>
+          <div class="fitmenu:static absolute w-full h-full fitmenu:w-0 fitmenu:h-[12px] fitmenu:mt-2 fitmenu:bg-lime-500 bg-stone-800" />
         </a>
       </li>
-      <li class="text-lime-500 font-semibold text-2xl uppercase">
-        <a href="#about_jobs" class="flex flex-col items-center">
-            <span class="whitespace-nowrap">No que trabalho</span>
-          <div class="w-0 h-[12px] mt-1 bg-lime-500" />
+      <li class="text-white text-md fitmenu:text-lime-500 font-semibold fitmenu:text-2xl uppercase">
+        <a href="#about_jobs" class="flex flex-col items-center fitmenu:static relative">
+            <span class="fitmenu:z-auto z-10 whitespace-nowrap fitmenu:p-0 p-2">No que trabalho</span>
+          <div class="fitmenu:static absolute w-full h-full fitmenu:w-0 fitmenu:h-[12px] fitmenu:mt-2 fitmenu:bg-lime-500 bg-stone-800" />
         </a>
       </li>
-      <li class="text-lime-500 font-semibold text-2xl uppercase">
-        <a href="#portfolio" class="flex flex-col items-center">
-          <span class="whitespace-nowrap">Portfólio</span>
-          <div class="w-0 h-[12px] mt-1 bg-lime-500" />
+      <li class="text-white text-md fitmenu:text-lime-500 font-semibold fitmenu:text-2xl uppercase">
+        <a href="#portfolio" class="flex flex-col items-center fitmenu:static relative">
+          <span class="fitmenu:z-auto z-10 whitespace-nowrap fitmenu:p-0 p-2">Portfólio</span>
+          <div class="fitmenu:static absolute w-full h-full fitmenu:w-0 fitmenu:h-[12px] fitmenu:mt-2 fitmenu:bg-lime-500 bg-stone-800" />
         </a>
       </li>
-      <li class="text-lime-500 font-semibold text-2xl uppercase">
-        <a href="#contact" class="flex flex-col items-center">
-          <span class="whitespace-nowrap">Contato</span>
-          <div class="w-0 h-[12px] mt-1 bg-lime-500" />
+      <li class="text-white text-md fitmenu:text-lime-500 font-semibold fitmenu:text-2xl uppercase">
+        <a href="#contact" class="flex flex-col items-center fitmenu:static relative">
+          <span class="fitmenu:z-auto z-10 whitespace-nowrap fitmenu:p-0 p-2">Contato</span>
+          <div class="fitmenu:static absolute w-full h-full fitmenu:w-0 fitmenu:h-[12px] fitmenu:mt-2 fitmenu:bg-lime-500 bg-stone-800" />
         </a>
       </li>
     </ul>
   </nav>
-  <a href="#top">
-    <span class="hero-arrow-up-circle-solid text-lime-500 w-12 h-12 fixed bottom-4 right-4" />
-  </a>
 </header>
-<style>
-.nav-menu li a > div {
-  transition: 0.3s ease-out;
-}
-
-.nav-menu li:hover a > div {
-  width: 80%;
-  height: 3px;
-  border-radius: 0;
-}
-</style>
+<div class="absolute z-20">
+<a href="#top" class="fixed bottom-4 right-4">
+  <span class="hero-arrow-up-circle-solid text-lime-500 w-12 h-12" />
+</a>
+</div>

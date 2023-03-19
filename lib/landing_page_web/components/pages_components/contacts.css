@@ -1,5 +1,10 @@
+.contact-group {
+  filter: drop-shadow(0 12px 12px rgb(0 0 0 / 0.5)) drop-shadow(0 5px 6px rgb(0 0 0 / 0.1));
+}
+
 .colorize {
   fill: currentColor;
+
 }
 
 .icon-size {

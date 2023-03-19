@@ -2,6 +2,14 @@
   filter: drop-shadow(0 12px 12px rgb(0 0 0 / 0.5)) drop-shadow(0 5px 6px rgb(0 0 0 / 0.1));
 }
 
+.contact-group:hover svg {
+  @apply text-lime-200;
+}
+
+.contact-group:hover div + span {
+  @apply text-lime-200;
+}
+
 .colorize {
   fill: currentColor;
 

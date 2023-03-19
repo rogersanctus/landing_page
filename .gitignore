@@ -35,3 +35,9 @@ landing_page-*.tar
 npm-debug.log
 /assets/node_modules/
 
+
+/rel/
+!/priv/static/robots.txt
+!/priv/static/favicon.ico
+/priv/static/robots*
+/priv/static/favicon-*

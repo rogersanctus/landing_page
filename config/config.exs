@@ -7,9 +7,6 @@
 # General application configuration
 import Config
 
-config :landing_page,
-  ecto_repos: [LandingPage.Repo]
-
 # Configures the endpoint
 config :landing_page, LandingPageWeb.Endpoint,
   url: [host: "localhost"],

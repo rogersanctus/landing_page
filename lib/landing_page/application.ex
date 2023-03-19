@@ -10,8 +10,6 @@ defmodule LandingPage.Application do
     children = [
       # Start the Telemetry supervisor
       LandingPageWeb.Telemetry,
-      # Start the Ecto repository
-      LandingPage.Repo,
       # Start the PubSub system
       {Phoenix.PubSub, name: LandingPage.PubSub},
       # Start Finch

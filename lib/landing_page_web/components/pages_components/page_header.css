@@ -25,3 +25,19 @@
     border-radius: 0;
   }
 }
+
+a[href="#top"] {
+  filter:
+    drop-shadow(0 0 8px rgb(0 0 0 / 0.08))
+    drop-shadow(0 3px 4px rgb(0 0 0 / 0.05));
+}
+
+a[href="#top"]:hover {
+  filter:
+    drop-shadow(0 0 6px rgb(0 0 0 / 0.05))
+    drop-shadow(0 3px 4px rgb(0 0 0 / 0.03));
+}
+
+a[href="#top"]:hover span {
+  @apply text-lime-600;
+}
